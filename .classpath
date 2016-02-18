@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="lib" path="D:/Selenium/selenium-java-2.3.0.jar"/>
+	<classpathentry kind="lib" path="D:/Sikuli/sikuli-java.jar"/>
+	<classpathentry kind="lib" path="D:/Sikuli/sikuli-setup.jar"/>
+	<classpathentry kind="lib" path="D:/Sikuli/sikuli-tessdata.jar"/>
+	<classpathentry kind="lib" path="D:/Selenium/javaee-api-7.0.jar"/>
+	<classpathentry kind="lib" path="lib/javax.mail-api-1.5.1.jar"/>
+	<classpathentry kind="lib" path="lib/javax.mail-1.5.1.jar"/>
+	<classpathentry kind="lib" path="D:/Selenium/CoreSeleniumJARS/selenium-java-2.48.2.jar"/>
+	<classpathentry kind="lib" path="D:/Selenium/CoreSeleniumJARS/selenium-java-2.48.2-srcs.jar"/>
+	<classpathentry kind="lib" path="D:/Selenium/poi-3.9/poi-3.9-20121203.jar"/>
+	<classpathentry kind="lib" path="D:/Selenium/poi-3.9/poi-examples-3.9-20121203.jar"/>
+	<classpathentry kind="lib" path="D:/Selenium/poi-3.9/poi-excelant-3.9-20121203.jar"/>
+	<classpathentry kind="lib" path="D:/Selenium/poi-3.9/poi-ooxml-3.9-20121203.jar"/>
+	<classpathentry kind="lib" path="D:/Selenium/poi-3.9/poi-ooxml-schemas-3.9-20121203.jar"/>
+	<classpathentry kind="lib" path="D:/Selenium/poi-3.9/poi-scratchpad-3.9-20121203.jar"/>
+	<classpathentry kind="lib" path="D:/Selenium/poi-3.9/ooxml-lib/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="D:/Selenium/poi-3.9/ooxml-lib/stax-api-1.0.1.jar"/>
+	<classpathentry kind="lib" path="D:/Selenium/poi-3.9/ooxml-lib/xmlbeans-2.3.0.jar"/>
+	<classpathentry kind="lib" path="D:/Selenium/CoreSeleniumJARS/java-json.jar"/>
+	<classpathentry kind="lib" path="D:/Selenium/CoreSeleniumJARS/selenium-server-standalone-2.48.2.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

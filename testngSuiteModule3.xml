@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="none">
+  <test name="TestSuiteModule3">
+    <classes>
+      <class name="com.junit.module3.FirefoxDriverDemo"/>
+      <class name="com.junit.module3.demoModule3"/>
+      <class name="com.junit.module3.HTMLUnitDriver"/>
+      <class name="com.junit.module3.ChromeDriverTest"/>
+      <class name="com.junit.module3.InternetExplorerDemo"/>
+    </classes>
+  </test> <!-- TestSuiteModule3 -->
+</suite> <!-- Suite -->

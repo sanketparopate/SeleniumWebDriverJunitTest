@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="58" started-at="2016-02-14T04:22:49Z" finished-at="2016-02-14T04:22:49Z">
+    <groups>
+      <group name="Car">
+        <method signature="TestAnnotationSequence.drive()[pri:0, instance:com.parallel.execution.TestAnnotationSequence@2cfb4a64]" name="drive" class="com.parallel.execution.TestAnnotationSequence"/>
+        <method signature="TestAnnotationSequence.changeGear()[pri:0, instance:com.parallel.execution.TestAnnotationSequence@2cfb4a64]" name="changeGear" class="com.parallel.execution.TestAnnotationSequence"/>
+        <method signature="TestAnnotationSequence.accelerate()[pri:0, instance:com.parallel.execution.TestAnnotationSequence@2cfb4a64]" name="accelerate" class="com.parallel.execution.TestAnnotationSequence"/>
+      </group> <!-- Car -->
+      <group name="Bike">
+        <method signature="TestAnnotationSequence.drive()[pri:0, instance:com.parallel.execution.TestAnnotationSequence@2cfb4a64]" name="drive" class="com.parallel.execution.TestAnnotationSequence"/>
+        <method signature="TestAnnotationSequence.changeGear()[pri:0, instance:com.parallel.execution.TestAnnotationSequence@2cfb4a64]" name="changeGear" class="com.parallel.execution.TestAnnotationSequence"/>
+        <method signature="TestAnnotationSequence.accelerate()[pri:0, instance:com.parallel.execution.TestAnnotationSequence@2cfb4a64]" name="accelerate" class="com.parallel.execution.TestAnnotationSequence"/>
+        <method signature="TestAnnotationSequence.drifting()[pri:0, instance:com.parallel.execution.TestAnnotationSequence@2cfb4a64]" name="drifting" class="com.parallel.execution.TestAnnotationSequence"/>
+      </group> <!-- Bike -->
+    </groups>
+    <test name="Default test" duration-ms="58" started-at="2016-02-14T04:22:49Z" finished-at="2016-02-14T04:22:49Z">
+      <class name="com.parallel.execution.TestAnnotationSequence">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.parallel.execution.TestAnnotationSequence@2cfb4a64]" name="beforeSuite" is-config="true" duration-ms="20" started-at="2016-02-14T09:52:49Z" finished-at="2016-02-14T09:52:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.parallel.execution.TestAnnotationSequence@2cfb4a64]" name="beforeTest" is-config="true" duration-ms="1" started-at="2016-02-14T09:52:49Z" finished-at="2016-02-14T09:52:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.parallel.execution.TestAnnotationSequence@2cfb4a64]" name="beforeClass" is-config="true" duration-ms="0" started-at="2016-02-14T09:52:49Z" finished-at="2016-02-14T09:52:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.parallel.execution.TestAnnotationSequence@2cfb4a64]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2016-02-14T09:52:49Z" finished-at="2016-02-14T09:52:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="drive()[pri:0, instance:com.parallel.execution.TestAnnotationSequence@2cfb4a64]" name="drive" duration-ms="8" started-at="2016-02-14T09:52:49Z" finished-at="2016-02-14T09:52:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- drive -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.parallel.execution.TestAnnotationSequence@2cfb4a64]" name="afterMethod" is-config="true" duration-ms="0" started-at="2016-02-14T09:52:49Z" finished-at="2016-02-14T09:52:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.parallel.execution.TestAnnotationSequence@2cfb4a64]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2016-02-14T09:52:49Z" finished-at="2016-02-14T09:52:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="drifting()[pri:0, instance:com.parallel.execution.TestAnnotationSequence@2cfb4a64]" name="drifting" duration-ms="1" started-at="2016-02-14T09:52:49Z" finished-at="2016-02-14T09:52:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- drifting -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.parallel.execution.TestAnnotationSequence@2cfb4a64]" name="afterMethod" is-config="true" duration-ms="1" started-at="2016-02-14T09:52:49Z" finished-at="2016-02-14T09:52:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.parallel.execution.TestAnnotationSequence@2cfb4a64]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2016-02-14T09:52:49Z" finished-at="2016-02-14T09:52:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="onMaxSpeed()[pri:0, instance:com.parallel.execution.TestAnnotationSequence@2cfb4a64]" name="onMaxSpeed" duration-ms="2" started-at="2016-02-14T09:52:49Z" finished-at="2016-02-14T09:52:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onMaxSpeed -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.parallel.execution.TestAnnotationSequence@2cfb4a64]" name="afterMethod" is-config="true" duration-ms="1" started-at="2016-02-14T09:52:49Z" finished-at="2016-02-14T09:52:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.parallel.execution.TestAnnotationSequence@2cfb4a64]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2016-02-14T09:52:49Z" finished-at="2016-02-14T09:52:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="changeGear()[pri:0, instance:com.parallel.execution.TestAnnotationSequence@2cfb4a64]" name="changeGear" duration-ms="3" started-at="2016-02-14T09:52:49Z" depends-on-methods="com.parallel.execution.TestAnnotationSequence.drive" finished-at="2016-02-14T09:52:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- changeGear -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.parallel.execution.TestAnnotationSequence@2cfb4a64]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2016-02-14T09:52:49Z" finished-at="2016-02-14T09:52:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.parallel.execution.TestAnnotationSequence@2cfb4a64]" name="afterMethod" is-config="true" duration-ms="0" started-at="2016-02-14T09:52:49Z" finished-at="2016-02-14T09:52:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="accelerate()[pri:0, instance:com.parallel.execution.TestAnnotationSequence@2cfb4a64]" name="accelerate" duration-ms="1" started-at="2016-02-14T09:52:49Z" depends-on-methods="com.parallel.execution.TestAnnotationSequence.changeGear" finished-at="2016-02-14T09:52:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accelerate -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.parallel.execution.TestAnnotationSequence@2cfb4a64]" name="afterMethod" is-config="true" duration-ms="1" started-at="2016-02-14T09:52:49Z" finished-at="2016-02-14T09:52:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.parallel.execution.TestAnnotationSequence@2cfb4a64]" name="afterClass" is-config="true" duration-ms="0" started-at="2016-02-14T09:52:49Z" finished-at="2016-02-14T09:52:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.parallel.execution.TestAnnotationSequence@2cfb4a64]" name="afterTest" is-config="true" duration-ms="0" started-at="2016-02-14T09:52:49Z" finished-at="2016-02-14T09:52:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.parallel.execution.TestAnnotationSequence@2cfb4a64]" name="afterSuite" is-config="true" duration-ms="0" started-at="2016-02-14T09:52:49Z" finished-at="2016-02-14T09:52:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.parallel.execution.TestAnnotationSequence -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
