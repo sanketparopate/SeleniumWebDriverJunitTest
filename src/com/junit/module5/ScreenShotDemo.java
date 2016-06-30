@@ -61,6 +61,7 @@ public class ScreenShotDemo {
 			File srcFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 			FileUtils.copyFile(srcFile, new File ("D:/FileForUpload/ScreenShot"+screenshotCounter+".png"));
 			screenshotCounter++;
+			
 			}catch (IOException e){
 				e.printStackTrace();
 			}

@@ -1,6 +1,9 @@
 package com.junit.module7;
 
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
@@ -11,14 +14,22 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class TestAnnotationSequence {
-  @Test ()
+  @Test (priority = 2, enabled = false)
   public void f2() {
-	  System.out.println("Test1 Ececuted");
+	  System.out.println("Test2 Ececuted");
+  }
+  @Test (priority = 1)
+  public void f4() {
+	  System.out.println("Test4 Ececuted");
+  }
+  @Test (priority = 4)
+  public void f3() {
+	  System.out.println("Test3 Ececuted");
   }
   
-  @Test()
+  @Test(priority = 3)
   public void f1() {
-	  System.out.println("Test2 Ececuted");
+	  System.out.println("Test1 Ececuted");
   }
   @BeforeMethod
   public void beforeMethod() {

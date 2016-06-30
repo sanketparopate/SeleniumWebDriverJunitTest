@@ -4,18 +4,20 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 public class EdurekaCo {
 	public static void main(String[] args) throws InterruptedException {
 		
-		String xLoginButton = "//*[@id='navbar']/li[4]/a";
-		String xEmail ="//*[@id='email_signin']";
-		String xPassword = "//*[@id='password_signin']";
+		String xLoginButton = "//*[@id='header-II']/section/nav/div[1]/a";
+		String xEmail ="//*[@id='inputName']";
+		String xPassword = "//*[@id='pwd']";
 		String xSignIn = "//*[@id='signinForm']/div[4]/button";
 		String xGoToCourse = "//*[@id='delay']/li/div/div/div[2]/p[3]/span/span/a";
 		//String baseURL2= "http://selenium-release.storage.googleapis.com/index.html?path=2.48/";
-		WebDriver driver= new FirefoxDriver();
+		
+		System.setProperty("webdriver.chrome.driver", "D:/Edureka/chromedriver.exe");
+		WebDriver driver= new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 		driver.get("http://www.edureka.co/");
 		

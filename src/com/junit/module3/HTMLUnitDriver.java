@@ -14,7 +14,6 @@ public class HTMLUnitDriver {
 		
 		String baseURL = "http://www.seleniumframework.com/Practiceform/";
 		
-		//System.setProperty("webdriver.chrome.driver", "D:/Edureka/chromedriver.exe");
 		driver = new HtmlUnitDriver();
 		driver.get(baseURL);
 		

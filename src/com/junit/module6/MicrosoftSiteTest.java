@@ -6,7 +6,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 public class MicrosoftSiteTest {
 	
@@ -15,14 +15,15 @@ public class MicrosoftSiteTest {
 	@Before
 	public void setup()
 	{
-		driver = new FirefoxDriver();
+		System.setProperty("webdriver.chrome.driver", "D:/Edureka/chromedriver.exe");
+		driver = new ChromeDriver();
 	}
 
 	@Test
 	public void test() {
 		driver.get("http://www.edureka.co/");
 		String pageTitle = driver.getTitle();
-		Assert.assertTrue("The Page title " , pageTitle.equals("Instructor Led Online Courses with 24x7 On- Support | Edureka"));
+		Assert.assertTrue("The Page title " , pageTitle.equals("InInstructor Led Online Courses with 24x7 On-Demand Support | Edureka"));
 	}
 	
 	@After

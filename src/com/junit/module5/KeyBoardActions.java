@@ -36,7 +36,7 @@ public class KeyBoardActions {
 		action.sendKeys(Keys.CONTROL).sendKeys("a").build().perform();;
 		
 			try {
-				Thread.sleep(3000);
+				Thread.sleep(6000);
 			} catch (InterruptedException e1) {
 				// TODO Auto-generated catch block
 				e1.printStackTrace();
@@ -45,7 +45,7 @@ public class KeyBoardActions {
 		
 		action.sendKeys(Keys.ENTER).perform();
 		try{
-			Thread.sleep(3000);
+			Thread.sleep(6000);
 		}catch(InterruptedException e){
 			e.printStackTrace();
 		}

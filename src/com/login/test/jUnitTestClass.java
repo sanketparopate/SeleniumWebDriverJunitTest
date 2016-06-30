@@ -9,7 +9,7 @@ public class jUnitTestClass {
 	
 	@Test
 	public void testMethod1() {
-		Assert.assertTrue(classObject.returnFalse());
+		Assert.assertFalse(classObject.returnFalse());
 	}
 	
 	@Test

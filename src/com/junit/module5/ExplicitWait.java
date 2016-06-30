@@ -33,8 +33,8 @@ public class ExplicitWait {
 		
 		driver.findElement(By.xpath("//*[@id='account']/a")).click();
 		WebElement element = eWait.until(ExpectedConditions.elementToBeClickable(By.id("log")));	//wait for element to be clickable
-		element.sendKeys("testuser_3");
-		driver.findElement(By.id("pwd")).sendKeys("Test@123");
+		element.sendKeys("sanket");
+		driver.findElement(By.id("pwd")).sendKeys("sanket12345");
 		driver.findElement(By.id("login")).click();
 		WebElement siteAdmin = eWait.until(ExpectedConditions.presenceOfElementLocated(By.linkText("Site Admin")));	//waiting for presence of element
 		siteAdmin.click();

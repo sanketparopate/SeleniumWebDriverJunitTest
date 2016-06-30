@@ -2,15 +2,16 @@ package com.junit.module3;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
 public class DropDownExample {
 	public static void main(String[] args) {
 		
 		String baseURL = "https://www.facebook.com/";
-				
-		WebDriver driver = new FirefoxDriver();
+		
+		System.setProperty("webdriver.chrome.driver", "D:/Edureka/chromedriver.exe");		
+		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get(baseURL);
 		

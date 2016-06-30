@@ -2,17 +2,17 @@ package com.junit.module4;
 
 import java.util.concurrent.TimeUnit;
 
-import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 public class RadioButtonValidation {
-	@Test
+
 	public static void main(String[] args) {
-		WebDriver driver = new FirefoxDriver();
-		driver.manage().window().maximize();
+		System.setProperty("webdriver.chrome.driver", "D:/Edureka/chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();	
 		driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
 		
 		driver.get("http://www.seleniumframework.com/Practiceform/");
@@ -32,7 +32,7 @@ public class RadioButtonValidation {
 			System.out.println("The Check box 1 is checked");
 		
 		
-		driver.close();
+		//driver.close();
 	}
 
 }

@@ -22,5 +22,6 @@
 	<classpathentry kind="lib" path="D:/Selenium/poi-3.9/ooxml-lib/xmlbeans-2.3.0.jar"/>
 	<classpathentry kind="lib" path="D:/Selenium/CoreSeleniumJARS/java-json.jar"/>
 	<classpathentry kind="lib" path="D:/Selenium/CoreSeleniumJARS/selenium-server-standalone-2.48.2.jar"/>
+	<classpathentry kind="lib" path="D:/Sikuli/sikuli-ide.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

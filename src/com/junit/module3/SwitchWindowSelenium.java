@@ -4,14 +4,15 @@ import java.util.Set;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 public class SwitchWindowSelenium {
 	static WebDriver driver;
 	public static void main(String[] args) throws Exception {
 
 		String windowTitle = "Selenium Framework | Selenium, Cucumber, Ruby, Java et al.";
-		driver = new FirefoxDriver();
+		System.setProperty("webdriver.chrome.driver", "D:/Edureka/chromedriver.exe");
+		driver = new ChromeDriver();
 		driver.get("http://www.seleniumframework.com/Practiceform/");
 		driver.findElement(By.xpath("//*[@id='button1']")).click();
 		Thread.sleep(5000);

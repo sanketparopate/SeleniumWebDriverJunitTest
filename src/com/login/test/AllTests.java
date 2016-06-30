@@ -5,7 +5,9 @@ import org.junit.runners.Suite;
 import org.junit.runners.Suite.SuiteClasses;
 
 @RunWith(Suite.class)
-@SuiteClasses({ TestClassJUnit.class, testClassforLogin.class, JunitSelenium.class })
+@SuiteClasses({ jUnitAnnotations.class, JunitSelenium.class,
+		jUnitTestClass.class, TestClass01.class, testClassforLogin.class,
+		TestClassJUnit.class })
 public class AllTests {
 
 }

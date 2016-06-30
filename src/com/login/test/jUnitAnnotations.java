@@ -1,14 +1,16 @@
 package com.login.test;
 
+import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Ignore;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class jUnitAnnotations {
+	
+	WebDriver driver;
 	
 @Before
 	public void beforeMethod(){
@@ -26,7 +28,7 @@ public class jUnitAnnotations {
 public void testMethod02(){
 	System.out.println("Test Method 02 executed");
 	System.out.println();
-	WebDriver driver = new FirefoxDriver();
+	driver.close();
 
 	}
 
@@ -50,6 +52,14 @@ System.out.println("After Class Method executed");
 System.out.println();
 Thread.sleep(1010);
 }
+
+
+@After
+public void afterMethod()
+{
+	System.out.println("After method executed");
+}
+
 
 @Ignore
 @Test

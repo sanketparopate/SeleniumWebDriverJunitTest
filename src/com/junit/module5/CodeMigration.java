@@ -1,8 +1,10 @@
 package com.junit.module5;
 
+import java.util.concurrent.TimeUnit;
+
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 import com.thoughtworks.selenium.DefaultSelenium;
 import com.thoughtworks.selenium.Selenium;
@@ -15,18 +17,24 @@ public class CodeMigration {
 	@Test
 	public void ececutorMethod(){
 		rcCode();
-		//webDriverCode();
+		
 	}
 	
+	@Test
+	public void ececute1(){
+		webDriverCode();
+	}
 	
 	public void webDriverCode(){
-		WebDriver driver = new FirefoxDriver();
+		System.setProperty("webdriver.chrome.driver", "D:/Edureka/chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		Selenium selenium = new WebDriverBackedSelenium(driver, "http://www.seleniumframework.com/Practiceform/");
 		selenium.open("/");		
 	}
 	
 	public void rcCode() {
-		Selenium selenium  = new DefaultSelenium("192.168.10.1",4444, "*firefox", "http://www.edureka.co");
+		Selenium selenium  = new DefaultSelenium("localhost",4444, "*firefox", "http://www.edureka.co");
 		selenium.start();
 		selenium.open("/");
 		

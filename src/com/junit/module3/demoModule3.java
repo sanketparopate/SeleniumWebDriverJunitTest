@@ -1,8 +1,9 @@
 package com.junit.module3;
 
-import org.testng.annotations.Test;
+
 import java.util.List;
 
+import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

@@ -5,7 +5,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -16,8 +16,8 @@ public class HoverEvent {
 	@BeforeMethod
 
 	public void setUp() throws Exception {
-		//System.setProperty("webdriver.chrome.driver", "D:/Edureka/chromedriver.exe");
-		driver = new FirefoxDriver();
+		System.setProperty("webdriver.chrome.driver", "D:/Edureka/chromedriver.exe");
+		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	}
@@ -30,14 +30,13 @@ public class HoverEvent {
 	@Test(groups ={"browser"})
 	public void hoverTest(){
 		String level1 ="//*[@id='main-nav']/li[2]/a/span";
-		String level2 = "//*[@id='main-nav']/li[2]/ul/li[2]/a/span";
+		String level2 = "//*[@id='main-nav']/li[2]/ul/li[2]/a";
 		driver.get("http://www.toolsqa.com/");
+		driver.manage().timeouts().pageLoadTimeout(50, TimeUnit.SECONDS);
 		WebElement element = driver.findElement(By.xpath(level1));
 		
 		Actions action = new Actions(driver);
-		action.moveToElement(element).build().perform();
-		action.moveToElement(driver.findElement(By.xpath(level2)));
-		action.click().build().perform();
+		action.moveToElement(element).moveToElement(driver.findElement(By.xpath(level2))).click().build().perform();
 			
 	}
 
